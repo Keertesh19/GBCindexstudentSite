@@ -1,6 +1,7 @@
 body {
   background: #f8f8f8;
   font-family: "Open Sans", sans-serif;
+  overflow: overlay;
 }
 
 a {
@@ -172,6 +173,15 @@ img {
   padding: 15px 0;
 }
 
+.profile-nav {
+  padding: 15px 0;
+  margin: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .social {
   margin: 0;
   padding: 0;
@@ -208,6 +218,48 @@ img {
 }
 
 .social li a i {
+  color: #fff;
+  font-size: 20px;
+  line-height: 45px;
+  display: block;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 5px 15px;
+  line-height: 45px;
+}
+
+.nav li a:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav li a {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  /* -webkit-transition: -webkit-transition, background-color 0.25s linear 0s;
+  -moz-transition: -moz-transition, background-color 0.25s linear 0s;
+  transition: transition, background-color 0.25s linear 0s;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%; */
+  border-radius: 50%;
+}
+
+.nav li a i {
   color: #fff;
   font-size: 20px;
   line-height: 45px;
