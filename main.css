@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background: #fdf2e9;
+}
 .clickable {
   user-select: none;
   cursor: pointer;
@@ -21,54 +23,72 @@
   align-items: center;
   padding: 0 25px;
   transition: 0.3s;
-  background: #005aa5;
+  /* background: #005aa5; */
 }
 
-.header li a {
-  display: block;
-  padding: 30px 25px;
-}
-
-.header a:hover {
-  box-shadow: 0 -5px 0 #fff inset, 500px 0 0 rgba(225, 225, 225, 0.03) inset;
-  padding: 27.5px 25px;
+.header li a:first-child {
+  margin-left: 5px;
 }
 
 .header-text {
-  color: whitesmoke;
+  color: #cf711f;
   font-size: 40px;
   font-weight: bolder;
 }
 
-.navbar {
-  display: flex;
+.welcome {
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+  margin: 10px auto;
+  width: 75%;
+  border: #fff 5px solid;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 20px;
+  background: #fff;
 }
 
-.nav {
+.heading {
+  /* position: relative; */
+  text-align: center;
+  top: 0;
+  left: 50%;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #111;
+}
+
+.main-nav-list {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
   align-items: center;
-  z-index: 1;
-  transition: 0.5s;
-}
-.nav li {
-  list-style-type: none;
+  gap: 3.2rem;
 }
 
-.nav li a {
-  color: whitesmoke;
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
   text-decoration: none;
-  display: block;
-  padding: 30px 25px;
-  font-size: 20px;
-  line-height: 1;
-  transition: 0.3s;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
 }
 
-.nav li a:hover {
-  box-shadow: 0 -5px 0px #fff inset, 500px 0 0 rgba(255, 255, 255, 0.03) inset;
-  padding: 35px 25px 45px 25px;
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
 }
