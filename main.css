@@ -1,68 +1,144 @@
+@import url("http://fonts.cdnfonts.com/css/leckerli-one"); /* Leckerli One Font */
+
 * {
-  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  user-select: none;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   background: #fdf2e9;
 }
-.clickable {
-  user-select: none;
-  cursor: pointer;
-  text-decoration: none;
-  transition: 0.3s;
-  padding: 15px 25px;
-}
 
 .header {
-  position: relative;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 25px;
-  transition: 0.3s;
-  /* background: #005aa5; */
+  background-color: #fdf2e9;
+  height: 100px;
+  padding: 0 4rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
 }
 
-.header li a:first-child {
-  margin-left: 5px;
+.header:focus {
+  background: black;
 }
 
-.header-text {
-  color: #cf711f;
+header a {
+  text-decoration: none;
+}
+
+header p {
+  margin-left: 25px;
+  font-family: "Leckerli One", sans-serif;
+  color: #111;
   font-size: 40px;
-  font-weight: bolder;
+}
+
+header p:hover {
+  transition: 0.3s;
+  color: #cf711f;
+}
+
+.container {
+  display: flex;
 }
 
 .welcome {
   justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  margin: 10px auto;
-  width: 75%;
-  border: #fff 5px solid;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  padding: 20px 30px;
+  margin: 50px;
+  width: auto;
+  border: 5px #fff solid;
   border-radius: 20px;
   background: #fff;
 }
 
+.welcome:hover {
+  box-shadow: 0 1px 6px rgba(207, 113, 31, 0.5),
+    0 1px 4px rgba(207, 113, 31, 0.5);
+  border-color: rgba(207, 113, 31, 0.2);
+  border-style: dotted;
+}
+
+.descSelf {
+  align-items: center;
+  padding: 20px 30px;
+  margin: 50px 50px 50px 0;
+  width: auto;
+  border: #fff 5px solid;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.descSelf:hover {
+  box-shadow: 0 1px 6px rgba(4, 56, 152, 0.5), 0 1px 4px rgb(0, 55, 158, 0.5);
+  border-color: rgba(4, 56, 152, 0.2);
+  border-style: dotted;
+}
+
+.descWeb {
+  align-items: center;
+  padding: 20px 30px;
+  margin: auto;
+  width: 50%;
+  border: #fff 5px solid;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.descWeb:hover {
+  box-shadow: 0 1px 6px rgba(8, 143, 143, 0.5), 0 1px 4px rgba(8, 143, 143, 0.5);
+  border-color: rgba(8, 143, 143, 0.2);
+  border-style: dotted;
+}
+
+.welcome .heading {
+  color: rgba(207, 113, 31);
+}
+
+.descSelf .heading {
+  color: rgba(4, 56, 152);
+}
+
+.descWeb .heading {
+  color: rgba(8, 143, 143);
+}
+
+.descWeb ul {
+  font-style: italic;
+}
+
+.heading::first-letter {
+  font-size: 80px;
+}
+
+b {
+  text-transform: uppercase;
+}
+
 .heading {
-  /* position: relative; */
+  font-family: "Leckerli One", sans-serif;
   text-align: center;
   top: 0;
   left: 50%;
   font-size: 50px;
   font-weight: bolder;
-  color: #111;
+  margin-bottom: 5px;
 }
 
 .main-nav-list {
+  font-family: "Leckerli One", sans-serif;
   list-style: none;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 3.2rem;
+  gap: 30px;
 }
 
 .main-nav-link:link,
@@ -71,18 +147,19 @@ body {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 20px;
   transition: all 0.3s;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #cf711f;
+  /* border: 2px #cf711f solid; */
 }
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
-  padding: 1.2rem 2.4rem;
+  padding: 10px 15px;
   border-radius: 9px;
   color: #fff;
   background-color: #e67e22;
@@ -91,4 +168,131 @@ body {
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+.list1,
+.list2,
+.list3,
+.list4 {
+  /* align-items: center; */
+  padding: 30px 50px;
+  margin: 30px;
+  width: 50%;
+  border: #fff 5px solid;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.list5 {
+  align-items: center;
+  padding: 30px 50px;
+  margin: 30px auto;
+  width: 50%;
+  border: #fff 5px solid;
+  border-radius: 20px;
+  background: #fff;
+}
+
+ul.circle {
+  list-style-type: circle;
+}
+
+ul.square {
+  list-style-type: square;
+}
+
+ol.a {
+  list-style-type: lower-alpha;
+}
+
+ol.A {
+  list-style-type: upper-alpha;
+}
+
+ol.i {
+  list-style-type: lower-roman;
+}
+
+ol.I {
+  list-style-type: upper-roman;
+}
+ul,
+ol {
+  padding-bottom: 15px;
+}
+
+.bookmark {
+  margin: 30px auto;
+}
+
+.bookmark ul {
+  border: #cf711f 5px solid;
+  border-radius: 10px;
+
+  padding: 10px 25px;
+  width: fit-content;
+  background: white;
+}
+
+resume {
+  background: white;
+  border: #fff 3px solid;
+  border-radius: 15px;
+  display: block;
+  margin: 30px auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+resume[size="A4"] {
+  width: 30cm;
+  height: 29.7cm;
+}
+
+resume p {
+  font-family: "Leckerli One", sans-serif;
+  font-size: 75px;
+}
+
+resume p::first-letter {
+  font-size: 100px;
+}
+
+.border {
+  padding: 20px 30px;
+  border: #111 2px solid;
+  margin: 25px;
+  border-radius: 15px;
+}
+
+.border img {
+  position: absolute;
+  border: #111 2px solid;
+  top: 22%;
+  left: 84%;
+  padding: auto;
+  height: 5cm;
+  width: auto;
+}
+
+.border a {
+  text-decoration: none;
+}
+
+section {
+  margin: 20px 10px 25px 10px;
+}
+
+.banners {
+  background-color: #111;
+  color: aliceblue;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+section + ol {
+  text-align: left;
+  padding: 0px 50px;
+  margin-bottom: 20px;
 }
