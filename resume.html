@@ -10,7 +10,8 @@
       content="HTML, CSS, Assignment, resume, resumepage, " />
     <meta name="description" content="Assignment 2 | Resume Page" />
     <title>Assignment 2 | Resume Page</title>
-    <link rel="stylesheet prefetch" href="main.css" />
+    <link rel="stylesheet prefetch" href="assets/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.ico " />
     <script
       src="https://kit.fontawesome.com/f0f8ea2116.js"
       crossorigin="anonymous"></script>
@@ -19,7 +20,7 @@
     <header class="header">
       <a href="index.html"
         ><div class="container">
-          <img src="icon.ico" />
+          <img src="assets/img/icon.ico" alt="Logo" />
           <p>Keertesh</p>
         </div></a
       >
@@ -34,17 +35,24 @@
     </header>
     <div class="container">
       <div class="bookmark">
-        <ul type="circle">
-          <b>Bookmarks</b>
-          <li>Education</li>
-          <li>Relevant Coursework</li>
-          <li>Proffesional Work Expereince</li>
+        <b>Bookmarks</b><br />
+
+        <a href="#edu">EDUCATION</a><br />
+
+        <a href="#rc">RELEVANT COURSEWORK</a><br />
+        <a href="#wke">WORK EXPERIENCE</a><br />
+
+        <a href="#otd">OTHER DETAILS</a><br />
+        <ul class="disc">
+          <li>Interpersonal Skills</li>
+          <li>Technical Skillset</li>
+          <li>Extra Curricular Activities</li>
+          <li>Personal Details</li>
         </ul>
       </div>
 
-      <resume size="A4"
-        ><div class="border">
-          <img src="mypicture.jpg" />
+      <div class="resume">
+        <div class="border">
           <p>I'm Keertesh</p>
           <b
             >E-mail:
@@ -55,28 +63,159 @@
           <b>Contact: <a href="tel:+16478933819">+1 (647)-389-3819</a></b
           ><br /><br />
           <hr />
-          <section>
+          <div class="section">
             A Diploma Engineer keen to learn the process of Robotics and
             Industrial Automation and build an ecosystem to find a solution to
             challenges faced by the industries. Clear understanding of
             Electronics Engineering, coding, cloud computing and training in
             Mechatronics and Industrial Automation.
-          </section>
+          </div>
           <hr />
-          <section class="banners">Education<br /></section>
-          <ol type="i">
+          <div class="banners section" id="edu">Education<br /></div>
+          <ol>
             <li>AISSE (10th) - Manav Mangal High School (CBSE) - 10 CGPA .</li>
             <li>Diploma in Electronics Engineering - ISTC - 75.56% .</li>
             <li>IELTS - 7.5 bands .</li>
             <li>Diploma in Computers System Technician (T141) - Current .</li>
           </ol>
           <hr />
-          <section class="banners">Relevant Coursework</section>
+          <div class="banners section" id="rc">Relevant Coursework</div>
+          <div class="heads">
+            Intoduction to College Communication (COMM1000)
+          </div>
+          <div class="desc">
+            Description: It is a college level english course in which we learn
+            how to improve english and use it in daily college assignments and
+            life. It is taught by Professor Angie Nikolakakis.
+            <ul>
+              <li>Writing Assignment</li>
+              <li>Critical Thinking</li>
+              <li>Diagnostic Writing</li>
+            </ul>
+          </div>
+          <div class="heads">Fundamental of Computing Logic (COMP1239)</div>
+          <div class="desc">
+            Description: It is more of a theoretical course in which we learn
+            about algorithms, and develop logical thinking skills to solve a
+            problem using programming languages. It has both labs and theory
+            subject. Lab is taken by Prof. Majlinda Mjeku and the theory lecture
+            is taken by Albert Danison.
+            <ul>
+              <li>:Lab Test 1</li>
+            </ul>
+          </div>
+
+          <div class="heads">Introduction to Web Development (COMP1234)</div>
+          <div class="desc">
+            Description: This is a course where we learn about HTML, CSS and
+            JavaScript and study and practice about how to make a website. It
+            has both lectures and labs. Lecture is taken by Prof. Maziar Masoudi
+            and the Lab is taken by Prof. Leonard Zajaczkowski.
+            <ul>
+              <li>1 Lab Test</li>
+              <li>lab exercises</li>
+              <li>2 Assignments</li>
+            </ul>
+          </div>
+          <div class="heads">IT Essentials (COMP1151)</div>
+          <div class="desc">
+            Description: This is a course where we are taugh basics and
+            essentials of IT and computer hardware. It has both lectures and
+            labs. Lab is taken by Abid Rana and Lecture is taken by Danish Khan.
+            <ul>
+              <li>5 Assignments</li>
+            </ul>
+          </div>
+          <div class="heads">Math for Computer Technology I(MATH1162)</div>
+          <div class="desc">
+            Description: This is mathematics course where we are taught all
+            basic maths need for future development and coding skills. It is
+            taught by Prof. Zach Bajin.
+            <ul>
+              <li>1 Test</li>
+              <li>1 Assignment</li>
+            </ul>
+          </div>
+          <div class="heads">Personal Finance (GSSC1027)</div>
+          <div class="desc">
+            Description: This a finance course where we learn about different
+            financial terms and definations and it helps us better understand
+            how finance works and how to manage ouyr own personal finance. It is
+            taught by Prof. Tania Davidson.
+            <ul>
+              <li>2 Assignments</li>
+            </ul>
+          </div>
+
+          <hr />
+          <div class="banners section" id="wke">Work Experience</div>
           <ol>
-            <li></li>
+            <li>
+              <b>Working as Sandwich Artist at Subway.</b>
+              <ul class="disc">
+                <li>Learn to manage and serve customers and wasking dishes</li>
+              </ul>
+            </li>
+            <li>
+              <b>Worked as Junior Engineer at Rank Robotics in India.</b>
+              <ul class="disc">
+                <li>
+                  Learned programming PLCS, working in factories and Program and
+                  design HMI.
+                </li>
+              </ul>
+            </li>
           </ol>
+
+          <div class="banners section" id="otd">OTHER DETAILS</div>
+          <div class="otherdetails">
+            <b id="is">Interpersonal Skills</b>
+            <ul>
+              <li>Problem Solving Ability</li>
+              <li>Good Communication Skills</li>
+              <li>Multitasking Ability</li>
+              <li>Embraces team work</li>
+              <li>Team leader</li>
+            </ul>
+            <hr />
+            <br />
+            <b id="ts">Technical Skillset</b>
+            <ul>
+              <li>Microsoft Office</li>
+              <li>AutoCAD</li>
+              <li>PLC Programming</li>
+              <li>Automation Studio</li>
+              <li>Robotics and Arduino based projects</li>
+              <li>Backend and Frontend Web Development</li>
+            </ul>
+            <hr />
+            <br />
+            <b id="eca">EXTRA CURRICULAR ACTIVITIES</b>
+            <ul>
+              <li>Among the top rank holder throughout my academic records.</li>
+              <li>Won Bronze medal in Inter-School Mathematics Olympiad.</li>
+              <li>Runner-up in robot fighting competition.</li>
+              <li>
+                Handsome knowledge in Android developing and source code
+                management on GitHub.
+              </li>
+              <li>State level Bhangra performer.</li>
+              <li>Keen interest in IoT based projects.</li>
+              <li>
+                Better understanding and vision in various programming
+                languages.
+              </li>
+            </ul>
+            <hr />
+            <br /><b id="pd">PERSONAL DETAILS</b>
+            <ul>
+              <li>Date of Birth: July 19, 2001</li>
+              <li>Father's Name: Ravneet Kumar</li>
+              <li>Languages known: English, Hindi and Punjabi</li>
+            </ul>
+          </div>
         </div>
-      </resume>
+      </div>
     </div>
     <script src="https://my.gblearn.com/js/loadscript.js"></script>
   </body>
